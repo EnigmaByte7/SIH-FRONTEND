@@ -25,7 +25,7 @@ const Display = ({handleState}) => {
 
     const fetchProjectDetails = async (id) => {
         try {
-            const response = await fetch(`https://backend-1v0u.onrender.com/form/projects${id}`);
+            const response = await fetch(`https://backend-1v0u.onrender.com/form/projects/${id}`);
             if (!response.ok) {
                 throw new Error('Cant fetch');
             }
